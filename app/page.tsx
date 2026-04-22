@@ -5,6 +5,8 @@ import Thunder from "@/components/Svg/thunder";
 import services1 from "@/public/services-1.jpg";
 import services2 from "@/public/services-2.jpg";
 import services3 from "@/public/services-3.jpg";
+import section3img from "@/public/section3_img.jpg";
+import Thunder_light from "@/components/Svg/thunder_light";
 export default function Home() {
   return (
     <main className="font-nunito-normal">
@@ -189,6 +191,53 @@ export default function Home() {
               alt="Corporate Trainings"
               className="w-full object-cover"
             />
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F9F9F9] flex items-center justify-center p-12">
+        <div className="w-fit gap-10 bg-[#2C0922] rounded-2xl p-7 flex items-center justify-between">
+          <div className="w-125 h-130 shrink-0">
+            <Image
+              src={section3img}
+              alt="Management development program"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="text-white w-140">
+            <h2 className="text-[35px] font-nunito">
+              Management Development Program
+            </h2>
+            <div className="text-lg font-normal space-y-5 mt-2">
+              <p>
+                Tobams Group offers a comprehensive Management Development
+                Program designed to equip corporate organisations with the high
+                -performing leaders they need to thrive.
+              </p>
+
+              <p>
+                Our program includes workshops, seminars, coaching sessions,
+                online courses, and experiential learning opportunities designed
+                to improve leadership, strategic thinking, communication, and
+                other essential managerial competencies for corporate
+                organisations.
+              </p>
+            </div>
+
+            <div className="w-fit mx-auto flex-col font-semibold space-y-4 mt-4">
+              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+                <Thunder_light /> Enhanced Leadership Skills
+              </div>
+              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+                <Thunder_light /> Improved Employee Engagement
+              </div>
+              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+                <Thunder_light /> Stronger Organisational Culture
+              </div>
+              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+                <Thunder_light /> Sustainable Growth
+              </div>
+            </div>
           </div>
         </div>
       </section>
