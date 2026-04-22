@@ -10,8 +10,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-3">
-          <button className="bg-[#571244] flex text-white text-lg font-semibold items-center px-4 py-2 gap-2 rounded-sm">
-            <div className="size-8 rounded-full flex items-center justify-center text-[#571244] bg-[#DDD0DA]">
+          <button className="bg-primary flex text-white text-lg font-semibold items-center px-4 py-2 gap-2 rounded-sm">
+            <div className="size-8 rounded-full flex items-center justify-center text-primary bg-[#DDD0DA]">
               <User size={25} />
             </div>
             Account
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <div className="border-t border-[#DDD0DA] py-4">
         <ul className="w-fit mx-auto flex items-center gap-6 text-lg">
-          <li className="flex items-center gap-2 border-b text-[#571244] w-fit cursor-pointer font-semibold">
+          <li className="flex items-center gap-2 border-b text-primary w-fit cursor-pointer font-semibold">
             About <ChevronDown size={18} color="#571244" className="mt-1" />
           </li>
           <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">

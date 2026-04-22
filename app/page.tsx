@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "@public/section2_img.jpg";
+import section2img from "@/public/section2_img.jpg";
 export default function Home() {
   return (
     <main>
@@ -17,14 +17,24 @@ export default function Home() {
             enhance skills, broaden knowledge, and propel careers forward in
             today&apos;s ever-evolving landscape.
           </p>
-          <button className="bg-[#571244] text-lg px-5 py-2.5 font-semibold rounded-sm mt-10">
+          <button className="bg-primary text-lg px-5 py-2.5 font-semibold rounded-sm mt-10">
             Book a Consultation
           </button>
         </div>
       </section>
-      <section className="bg-[#5712441A] p-10">
+      <section className="bg-[#5712441A] p-13 h-screen flex">
+        <div className="w-139 h-142 rounded-full overflow-hidden bg-red-500">
+          <Image
+            src={section2img}
+            alt="learning management system"
+            className="object-cover w-full h-full"
+          />
+        </div>
+
         <div>
-          <Image src={image} alt="learning management system" />
+          <h2 className="font-nunito font-semibold text-[40px] text-primary">
+            Learning Management System
+          </h2>
         </div>
       </section>
     </main>

@@ -3,6 +3,7 @@
 @theme {
   --font-nunito-normal: var(--font-nunito-sans);
   --font-nunito: var(--font-nunito);
+  --color-primary: #571244;
 }
 .hero-bg {
   background-image: url("../public/herobg.jpg");
