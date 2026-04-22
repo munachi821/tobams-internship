@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito_Sans, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const nunitoSans = Nunito({
+const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
+  subsets: ["latin"],
+});
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
 });
 
@@ -19,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${nunitoSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+    <html
+      lang="en"
+      className={`${nunitoSans.variable} ${nunito.variable} h-full antialiased`}
+    >
+      <body className="min-h-screen flex flex-col relative">
         <Navbar />
         {children}
       </body>

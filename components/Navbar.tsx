@@ -3,7 +3,7 @@ import tobamsLogo from "@/public/tobams-logo.png";
 import { ChevronDown, User } from "lucide-react";
 const Navbar = () => {
   return (
-    <nav className="bg-white w-full">
+    <nav className="bg-white w-full absolute top-0 z-10">
       <div className="flex justify-between items-center px-6">
         <div>
           <Image src={tobamsLogo} alt="tobams group logo" className="w-38" />

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --font-nunito: var(--font-nunito-sans);
+@theme {
+  --font-nunito-normal: var(--font-nunito-sans);
+  --font-nunito: var(--font-nunito);
+}
+.hero-bg {
+  background-image: url("../public/herobg.jpg");
+  background-size: cover;
+  background-position: top center;
 }
