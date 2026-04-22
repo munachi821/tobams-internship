@@ -27,27 +27,27 @@ const Navbar = () => {
           <li className="flex items-center gap-2 border-b text-primary w-fit cursor-pointer font-semibold">
             About <ChevronDown size={18} color="#571244" className="mt-1" />
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             What We Do
             <ChevronDown size={18} color="#571244" className="mt-1" />
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             Jobs
             <ChevronDown size={18} color="#571244" className="mt-1" />
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             Projects
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             TG Academy
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             Strategic Patnership
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             Pricing
           </li>
-          <li className="flex items-center gap-2 text-[#151515] w-fit cursor-pointer">
+          <li className="flex items-center gap-2 text-[main_text] w-fit cursor-pointer">
             Book a Consultation
           </li>
         </ul>

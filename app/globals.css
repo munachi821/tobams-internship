@@ -4,6 +4,7 @@
   --font-nunito-normal: var(--font-nunito-sans);
   --font-nunito: var(--font-nunito);
   --color-primary: #571244;
+  --color-main_text: #151515;
 }
 .hero-bg {
   background-image: url("../public/herobg.jpg");
