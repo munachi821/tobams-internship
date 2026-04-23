@@ -47,14 +47,15 @@ export default function Home() {
   ];
   return (
     <main className="font-nunito-normal">
-      <section className="h-screen relative hero-bg flex items-center justify-center">
+      <section className="h-screen relative hero-bg flex items-center justify-center p-3">
         <div className="absolute bg-black/50 w-full h-full"></div>
-        <div className="py-10 relative text-center text-white max-w-272 space-y-2 mt-32">
-          <div className="w-48.25 bg-white/10 font-semibold rounded-full px-4 text-center py-2 text-sm mx-auto mb-4">
+        <div className="py-10 relative text-center text-white max-w-272 space-y-2 sm:mt-32">
+          <div className="w-48.25 bg-white/10 font-semibold rounded-full px-4 text-center py-3 text-sm mx-auto mb-4">
             <p>WHAT WE DO</p>
           </div>
-          <h1 className="font-bold text-[57px] font-nunito leading-tight">
-            Training and Development
+          <h1 className="font-bold text-[26px] sm:text-[57px] font-nunito leading-tight my-2">
+            <span className="inline sm:hidden">Learning</span>{" "}
+            <span className="hidden sm:inline">Training</span> and Development
           </h1>
           <p className="font-medium text-lg">
             Our comprehensive range of programs and resources is designed to
