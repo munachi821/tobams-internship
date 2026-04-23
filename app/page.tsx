@@ -259,9 +259,9 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[#F9F9F9] flex items-center justify-center py-5 sm:p-12 px-4">
-        <div className="max-w-6xl w-full gap-5 sm:gap-10 bg-[#2C0922] rounded-2xl p-3.5 sm:p-7 flex flex-col sm:flex-row items-center justify-between">
+        <div className="max-w-6xl w-full gap-5 sm:gap-10 bg-[#2C0922] rounded-2xl p-3.5 sm:p-10 flex flex-col sm:flex-row items-center justify-between">
           <div>
-            <h2 className="text-base font-semibold sm:hiddden text-white mt-1.5 mb-3.5 font-nunito">
+            <h2 className="sm:hidden text-base font-semibold sm:hiddden text-white mt-1.5 mb-3.5 font-nunito">
               Management Development Program
             </h2>
             <div className=" sm:max-w-125 sm:h-130 shrink-0 rounded-lg rounded-br-none overflow-hidden">
@@ -293,17 +293,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-fit mx-auto flex-col font-semibold space-y-4 mt-6 sm:mt-4">
-              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+            <div className="font-semibold space-y-4 mt-6 sm:mt-4 w-full">
+              <div className="flex bg-[#8F6182] w-full py-1.5 items-center px-4 gap-3 rounded-lg ml-0 sm:ml-2">
                 <Thunder_white /> Enhanced Leadership Skills
               </div>
-              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] w-full py-1.5 items-center px-4 gap-3 rounded-lg ml-0 sm:ml-2">
                 <Thunder_white /> Improved Employee Engagement
               </div>
-              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] w-full py-1.5 items-center px-4 gap-3 rounded-lg ml-0 sm:ml-2">
                 <Thunder_white /> Stronger Organisational Culture
               </div>
-              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] w-full py-1.5 items-center px-4 gap-3 rounded-lg ml-0 sm:ml-2">
                 <Thunder_white /> Sustainable Growth
               </div>
             </div>
