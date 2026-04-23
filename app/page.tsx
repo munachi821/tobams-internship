@@ -310,8 +310,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F9F9F9] pb-10">
-        <div className="bg-white py-10 p-5">
+      <section className="bg-[#F9F9F9] pb-5 sm:pb-10">
+        <div className="bg-white py-5 sm:py-10 p-5">
           <div className="bg-[#EF435333] p-6 rounded-2xl max-w-6xl mx-auto">
             <div>
               <p className="text-[#1671D9] font-semibold font-nunito italic text-sm sm:text-base">
