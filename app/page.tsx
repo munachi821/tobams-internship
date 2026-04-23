@@ -67,22 +67,27 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="bg-[#F9F9F9] py-8 h-fit flex my-auto">
-        <div className="bg-[#5712441A] px-10 overflow-x-hidden py-5  flex gap-10 items-center">
-          <div className="w-139 h-142 rounded-full overflow-hidden bg-red-500 shrink-0">
-            <Image
-              src={section2img}
-              alt="learning management system"
-              className="object-cover w-full h-full"
-            />
+      <section className="bg-[#F9F9F9] py-8 h-fit flex my-auto w-screen">
+        <div className="bg-[#5712441A] px-5 sm:px-10 overflow-x-hidden py-5 flex flex-col sm:flex-row gap-10 items-center">
+          <div>
+            <h2 className="sm:hidden font-nunito font-semibold text-[22px] text-primary mb-5">
+              Learning Management System
+            </h2>
+            <div className="w-full max-w-142 aspect-square rounded-full overflow-hidden shrink-0">
+              <Image
+                src={section2img}
+                alt="learning management system"
+                className="object-cover w-full h-full"
+              />
+            </div>
           </div>
 
           <div>
-            <h2 className="font-nunito font-semibold text-[35px] text-primary mb-5">
+            <h2 className="hidden sm:block font-nunito font-semibold text-[35px] text-primary mb-5">
               Learning Management System
             </h2>
 
-            <div className="bg-[#5712441A] p-4 rounded-md w-2xl text-lg text-main_text leading-6.5">
+            <div className="bg-[#5712441A] p-4 rounded-md max-w-2xl text-lg text-main_text leading-6.5">
               <p>
                 TG Academy is a hub of knowledge and skill-building resources
                 designed to empower tech talents on their learning journey. From
@@ -98,7 +103,7 @@ export default function Home() {
               <p className="font-bold text-primary mt-4 mb-2">
                 Some of our courses include:
               </p>
-              <ul className="flex flex-wrap gap-x-5 text-base gap-y-2">
+              <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-x-5 text-base gap-y-2">
                 <li>● Business Analysis</li>
                 <li>● Design Thinking</li>
                 <li>● Effective Communication</li>
@@ -106,9 +111,13 @@ export default function Home() {
                 <li>● Carrer Development</li>
                 <li>● Business Model</li>
               </ul>
+
+              <button className="flex sm:hidden items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-8">
+                Learn More <ArrowUpRight />
+              </button>
             </div>
 
-            <button className="flex items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-10">
+            <button className="hidden sm:flex items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-10">
               Learn More <ArrowUpRight />
             </button>
           </div>
