@@ -67,7 +67,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="bg-[#F9F9F9] py-8 h-fit flex my-auto w-screen">
+      <section className="bg-[#F9F9F9] py-8 h-fit flex my-auto w-full">
         <div className="bg-[#5712441A] px-5 sm:px-10 overflow-x-hidden py-5 flex flex-col sm:flex-row gap-10 items-center">
           <div>
             <h2 className="sm:hidden font-nunito font-semibold text-[22px] text-primary mb-5">
@@ -258,21 +258,26 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F9F9F9] flex items-center justify-center p-12">
-        <div className="w-fit gap-10 bg-[#2C0922] rounded-2xl p-7 flex items-center justify-between">
-          <div className="w-125 h-130 shrink-0">
-            <Image
-              src={section3img}
-              alt="Management development program"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="text-white w-140">
-            <h2 className="text-[35px] font-nunito">
+      <section className="bg-[#F9F9F9] flex items-center justify-center py-5 sm:p-12 px-4">
+        <div className="max-w-6xl w-full gap-5 sm:gap-10 bg-[#2C0922] rounded-2xl p-3.5 sm:p-7 flex flex-col sm:flex-row items-center justify-between">
+          <div>
+            <h2 className="text-base font-semibold sm:hiddden text-white mt-1.5 mb-3.5 font-nunito">
               Management Development Program
             </h2>
-            <div className="text-lg font-normal space-y-5 mt-2">
+            <div className=" sm:max-w-125 sm:h-130 shrink-0 rounded-lg rounded-br-none overflow-hidden">
+              <Image
+                src={section3img}
+                alt="Management development program"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="text-white max-w-140 w-full">
+            <h2 className="hidden sm:block text-[35px] font-nunito">
+              Management Development Program
+            </h2>
+            <div className="text-base sm:text-lg font-normal space-y-5 sm:mt-2">
               <p>
                 Tobams Group offers a comprehensive Management Development
                 Program designed to equip corporate organisations with the high
@@ -288,17 +293,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-fit mx-auto flex-col font-semibold space-y-4 mt-4">
-              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+            <div className="w-fit mx-auto flex-col font-semibold space-y-4 mt-6 sm:mt-4">
+              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
                 <Thunder_white /> Enhanced Leadership Skills
               </div>
-              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
                 <Thunder_white /> Improved Employee Engagement
               </div>
-              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
                 <Thunder_white /> Stronger Organisational Culture
               </div>
-              <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
+              <div className="flex bg-[#8F6182] max-w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
                 <Thunder_white /> Sustainable Growth
               </div>
             </div>
