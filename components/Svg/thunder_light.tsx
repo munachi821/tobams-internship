@@ -9,8 +9,8 @@ const thunder_light = () => {
     >
       <path
         d="M7.87302 0.761963V6.98419H13.2064L6.09524 16.762V10.5397H0.761909L7.87302 0.761963Z"
-        fill="#ffff"
-        stroke="#ffff"
+        fill="##DDD0DA"
+        stroke="#571244"
         strokeWidth="1.52381"
         strokeLinecap="round"
         strokeLinejoin="round"

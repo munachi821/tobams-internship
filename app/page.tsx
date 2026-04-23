@@ -6,6 +6,8 @@ import services1 from "@/public/services-1.jpg";
 import services2 from "@/public/services-2.jpg";
 import services3 from "@/public/services-3.jpg";
 import section3img from "@/public/section3_img.jpg";
+import section4img from "@/public/section4_img.jpg";
+import Thunder_white from "@/components/Svg/thunder_white";
 import Thunder_light from "@/components/Svg/thunder_light";
 export default function Home() {
   return (
@@ -226,16 +228,71 @@ export default function Home() {
 
             <div className="w-fit mx-auto flex-col font-semibold space-y-4 mt-4">
               <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
-                <Thunder_light /> Enhanced Leadership Skills
+                <Thunder_white /> Enhanced Leadership Skills
               </div>
               <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
-                <Thunder_light /> Improved Employee Engagement
+                <Thunder_white /> Improved Employee Engagement
               </div>
               <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
-                <Thunder_light /> Stronger Organisational Culture
+                <Thunder_white /> Stronger Organisational Culture
               </div>
               <div className="flex bg-[#8F6182] w-127.5 py-1.5 items-center px-4 gap-3 rounded-lg">
-                <Thunder_light /> Sustainable Growth
+                <Thunder_white /> Sustainable Growth
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F9F9F9] pb-10">
+        <div className="bg-white py-10">
+          <div className="bg-[#EF435333] p-6 rounded-2xl max-w-6xl mx-auto">
+            <div>
+              <p className="text-[#1671D9] font-semibold font-nunito italic">
+                Learning With Our CEO:
+              </p>
+              <h2 className="text-2xl text-primary font-semibold font-nunito italic mt-1">
+                Transformation Hub with jite Newton
+              </h2>
+              <p className="text-base text-main_text mt-4">
+                Transformation Hub with Jite Newton is a flagship webinar series
+                curated by the CEO, Dr. Jite Newton. Designed to elevate career
+                trajectories and leadership capabilities, this exclusive event
+                offers invaluable insights and strategies for personal and
+                professional growth. Whether you&apos;re seeking to advance your
+                career or enhance your leadership skills, the Transformation Hub
+                provides a transformative learning experience to unlock your
+                full potential and drive success in your endeavours.
+              </p>
+            </div>
+            <div className="mt-4 flex gap-8">
+              <div className="w-130 h-80 rounded-lg overflow-hidden shrink-0">
+                <Image
+                  src={section4img}
+                  alt="Transformation Hub with jite Newton"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="bg-[#FFFFFF4D] w-full p-5 py-7 rounded-lg flex my-auto flex-col">
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    "Strategic Career Guidiance",
+                    "LeaderShip Development",
+                    "CV Development",
+                    "Sustainability Leadership",
+                    "Communication Skills",
+                    "Business Model",
+                  ].map((item) => (
+                    <div
+                      className="bg-white p-3.5 flex gap-3 items-center rounded-lg font-semibold"
+                      key={item}
+                    >
+                      <Thunder_light /> {item}
+                    </div>
+                  ))}
+                </div>
+                <button className="w-fit flex items-center gap-2 text-white bg-primary text-base px-5 py-2.5 font-semibold rounded-sm mt-4">
+                  Learn More <ArrowUpRight />
+                </button>
               </div>
             </div>
           </div>
