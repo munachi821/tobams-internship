@@ -13,6 +13,7 @@ import testimonial1 from "@/public/testimonial1.png";
 import testimonial2 from "@/public/testimonial2.png";
 import testimonial3 from "@/public/testimonial3.png";
 import testimonial4 from "@/public/testimonial4.jpg";
+import Footer from "@/components/Footer";
 export default function Home() {
   const testimonials = [
     {
@@ -455,6 +456,7 @@ export default function Home() {
           </button>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
