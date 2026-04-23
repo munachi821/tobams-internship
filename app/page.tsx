@@ -1,6 +1,6 @@
 import Image from "next/image";
 import section2img from "@/public/section2_img.jpg";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Thunder from "@/components/Svg/thunder";
 import services1 from "@/public/services-1.jpg";
 import services2 from "@/public/services-2.jpg";
@@ -9,7 +9,41 @@ import section3img from "@/public/section3_img.jpg";
 import section4img from "@/public/section4_img.jpg";
 import Thunder_white from "@/components/Svg/thunder_white";
 import Thunder_light from "@/components/Svg/thunder_light";
+import testimonial1 from "@/public/testimonial1.png";
+import testimonial2 from "@/public/testimonial2.png";
+import testimonial3 from "@/public/testimonial3.png";
+import testimonial4 from "@/public/testimonial4.jpg";
 export default function Home() {
+  const testimonials = [
+    {
+      img: testimonial1,
+      name: "Aisha Yusuf",
+      bussiness: "Founder, CraftHub NG",
+      testimonial:
+        "Working with Tobams Group on our website was a breeze. They understood our vision and transformed it into a beautiful online space. Highly recommend their Website Design service!",
+    },
+    {
+      img: testimonial2,
+      name: "John Davies",
+      bussiness: "Marketing Manager, E-Commerce Emporium",
+      testimonial:
+        "Tobams Group's Digital Marketing strategies gave our brand the boost it needed. Simple yet powerful techniques that delivered tangible results. A pleasure to collaborate with!",
+    },
+    {
+      img: testimonial3,
+      name: "Chinonso Nwankwo",
+      bussiness: "HR Director, FutureTech Solutions",
+      testimonial:
+        "Tobams Group has been instrumental in our talent acquisition journey. Their Tech Talent Solution service consistently connects us with the right professionals. Reliable and straightforward.",
+    },
+    {
+      img: testimonial4,
+      name: "Aisha Yusuf",
+      bussiness: "Founder, CraftHub NG",
+      testimonial:
+        "The Creative and Digital Media services at Tobams Group brought our ideas to life. Simple, creative, and impactful – exactly what we needed for our projects.",
+    },
+  ];
   return (
     <main className="font-nunito-normal">
       <section className="h-screen relative hero-bg flex items-center justify-center">
@@ -350,6 +384,74 @@ export default function Home() {
           </div>
           <button className="w-fit flex items-center gap-2 text-white bg-primary text-base px-6 py-2.5 font-semibold rounded-sm mt-9">
             Learn More <ArrowUpRight />
+          </button>
+        </div>
+      </section>
+      <section className="py-8 bg-[#F9F9F9]">
+        <div className="bg-primary max-w-5xl mx-auto font-nunito p-9 flex flex-col items-center justify-center rounded-md">
+          <p className="text-white text-center text-lg font-semibold">
+            Want to accelerate professional growth and development at your
+            organisation? <br /> See how we can help.
+          </p>
+          <button className="w-fit mx-auto text-primary bg-white text-base px-6 py-2.5 font-semibold rounded-xs mt-6">
+            Book a Consultation
+          </button>
+        </div>
+
+        <div className="mt-10 pl-14">
+          <h2 className="text-4xl font-nunito text-center font-bold">
+            Testimonials
+          </h2>
+
+          <div className="max-w-full mt-8 flex items-center overflow-y-auto gap-5 hide-scrollbar">
+            {testimonials.map((testimonial, i) => (
+              <div
+                className="p-4 bg-white w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0"
+                key={i}
+              >
+                <header className="flex gap-5 items-center">
+                  <div className="size-11 rounded-full overflow-hidden">
+                    <Image
+                      src={testimonial.img}
+                      alt={testimonial.bussiness}
+                      className="size-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold">{testimonial.name}</p>
+                    <p className="text-[#696969] text-sm">
+                      {testimonial.bussiness}
+                    </p>
+                  </div>
+                </header>
+
+                <p className="text-main_text mt-5">{testimonial.testimonial}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex gap-4 items-center justify-end mr-4 mt-8">
+            <button className="size-8 rounded-lg bg-[#F043541A] text-[#EF4353] flex items-center justify-center cursor-pointer">
+              <ChevronLeft size={25} strokeWidth={2.5} />
+            </button>
+            <button className="size-8 rounded-lg bg-[#F043541A] text-[#EF4353] flex items-center justify-center cursor-pointer">
+              <ChevronRight size={25} strokeWidth={2.5} />
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-[#1D0617] py-8 px-10 flex items-center justify-between text-white mt-10">
+          <div>
+            <p className="text-lg">
+              Ready to be a part of something extraodinary?
+            </p>
+            <h2 className="font-nunito text-3xl mt-4 font-semibold">
+              Let&apos;s work together to create a diffrence
+            </h2>
+          </div>
+
+          <button className="bg-primary py-2 px-5 cursor-pointer">
+            Get In Touch
           </button>
         </div>
       </section>
