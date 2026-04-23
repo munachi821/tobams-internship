@@ -387,7 +387,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="py-8 bg-[#F9F9F9]">
+      <section className="pt-8 bg-[#F9F9F9]">
         <div className="bg-primary max-w-5xl mx-auto font-nunito p-9 flex flex-col items-center justify-center rounded-md">
           <p className="text-white text-center text-lg font-semibold">
             Want to accelerate professional growth and development at your
@@ -440,7 +440,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#1D0617] py-8 px-10 flex items-center justify-between text-white mt-10">
+        <div className="bg-[#1D0617] py-8 px-14 flex items-center justify-between text-white mt-10">
           <div>
             <p className="text-lg">
               Ready to be a part of something extraodinary?
