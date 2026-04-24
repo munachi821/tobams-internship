@@ -3,13 +3,14 @@ import tobamsLogo from "@/public/tobams-logo.png";
 import X from "@/components/Svg/x";
 import Linkedin from "./Svg/linkedin";
 import Instagram from "./Svg/instagram";
-import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import Sms from "./Svg/sms";
+import Phone from "./Svg/phone";
 const Footer = () => {
   return (
-    <footer className="bg-[#11040E] py-8 px-15 text-white border-t-2 border-[#C4C4C4]">
-      <div className="flex justify-between">
-        <div className="w-83 font-light">
+    <footer className="bg-[#11040E] py-8 px-5 sm:px-15 text-white border-t-2 border-[#C4C4C4]">
+      <div className="flex justify-between flex-col lg:flex-row gap-y-2 sm:gap-0">
+        <div className="max-w-83 font-light">
           <Image src={tobamsLogo} alt="tobams group logo" className="w-38" />
 
           <p>
@@ -24,8 +25,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul className="space-y-2 mt-4 font-light">
-          <li className="text-lg font-semibold mb-3">What We Do</li>
+        <ul className="space-y-2 mt-4 text-sm sm:text-base font-light">
+          <li className="text-base sm:text-lg font-semibold mb-3">
+            What We Do
+          </li>
           <li>Sustainability Service</li>
           <li>Strategy Planning and Implementation</li>
           <li>Tech Talent Solutions</li>
@@ -35,8 +38,8 @@ const Footer = () => {
           <li>Talent Recruitment</li>
         </ul>
 
-        <ul className="space-y-2 mt-4 font-light">
-          <li className="text-lg font-semibold mb-3">Company</li>
+        <ul className="space-y-2 mt-4 text-sm sm:text-base font-light">
+          <li className="text-base sm:text-lg font-semibold mb-3">Company</li>
           <li>About</li>
           <li>Jobs</li>
           <li>Projects</li>
@@ -49,23 +52,25 @@ const Footer = () => {
           <li>Testimonials</li>
         </ul>
 
-        <ul className="space-y-2 mt-4 font-light">
-          <li className="text-lg font-semibold mb-3">Solution</li>
+        <ul className="space-y-2 mt-4 text-sm sm:text-base font-light">
+          <li className="text-base sm:text-lg font-semibold mb-3">Solution</li>
           <li>Tobams Group Academy</li>
           <li>Help a Tech Talent</li>
           <li>Campus Ambassadors Program</li>
           <li>Join Our Platform</li>
           <li>Pricing</li>
           <li>Book a Consultation</li>
-          <li>Join Our SLack COmmunity</li>
+          <li>Join Our SLack Community</li>
         </ul>
       </div>
 
-      <div className="bg-[#FFFFFF0F] rounded-md px-5 py-7 flex mt-15">
-        <div>
-          <h3 className="font-nunito text-lg">Registered Offices</h3>
+      <div className="bg-[#FFFFFF0F] rounded-md px-5 py-7 flex flex-col-reverse md:flex-row mt-15">
+        <div className="mt-4 sm:mt-0">
+          <h3 className="font-nunito text-lg font-semibold sm:font-normal">
+            Registered Offices
+          </h3>
 
-          <div className="flex mt-2">
+          <div className="flex mt-2 flex-col md:flex-row text-sm sm:text-base gap-3 sm:gap-0">
             <div>
               <p className="font-light">
                 <span className="text-[#EF4353]">United Kingdom</span>
@@ -74,7 +79,7 @@ const Footer = () => {
                 Street, Romford, Essex, United Kingdom, RM1 4QA
               </p>
             </div>
-            <div className="border-l pl-5 border-[#DDD0DA]/10">
+            <div className="border-0 md:border-l md:pl-5 border-[#DDD0DA]/10 mt-2">
               <p className="font-light">
                 <span className="text-[#EF4353]">Nigeria</span>
                 <br />
@@ -85,23 +90,25 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-l pl-5 border-[#DDD0DA]/10">
-          <h3 className="font-nunito text-lg">Contact Information</h3>
-          <div className="mt-4 space-y-2.5">
+        <div className="border-0 md:border-l md:pl-5 border-[#DDD0DA]/10">
+          <h3 className="font-nunito text-lg font-semibold sm:font-normal">
+            Contact Information
+          </h3>
+          <div className="mt-3 sm:mt-4 space-y-2.5 text-sm sm:text-base font-light sm:font-normal">
             <p className="flex gap-3 items-center">
-              <Mail color="#ef4353" size={20} /> theteam@tobamsgroup.com
+              <Sms /> theteam@tobamsgroup.com
             </p>
             <p className="flex gap-3 items-center">
-              <Phone color="#ef4353" size={20} /> +447886600748
+              <Phone /> +447886600748
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-between font-extralight border-t border-[#DDD0DA]/10 py-4 mt-8">
+      <div className="text-white/70 flex items-center justify-between flex-col-reverse sm:flex-row font-extralight border-t border-[#DDD0DA]/10 py-4 mt-8 text-center gap-5 sm:gap-0">
         <p>Copyright ⓒ Tobams Group, 2024. All rights reserved.</p>
 
-        <ul className="flex gap-3 items-center">
+        <ul className="flex flex-wrap gap-3 items-center justify-center">
           <li className="underline">
             <Link href="/">Terms and Conditions</Link>
           </li>
