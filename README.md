@@ -4,7 +4,7 @@ This is a fully responsive landing page built with [Next.js](https://nextjs.org)
 
 ## Live Deployment
 
-**Live URL:** [Insert Vercel/Netlify URL Here] _(Please deploy and update this!)_
+**Live URL:** https://tobams-internship.vercel.app/
 
 ## Setup Instructions
 
