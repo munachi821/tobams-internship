@@ -5,6 +5,8 @@ This is a fully responsive landing page built with [Next.js](https://nextjs.org)
 ## Live Deployment
 
 **Live URL:** https://tobams-internship.vercel.app/
+**GitHub Repository:** https://github.com/munachi821/tobams-internship
+**Figma Design:** https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0
 
 ## Setup Instructions
 
