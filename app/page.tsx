@@ -126,7 +126,7 @@ export default function Home() {
       <section className="px-4 sm:px-10 sm:py-12 bg-[#F9F9F9]">
         <div className="bg-[#ffffff] py-2 space-y-6 sm:space-y-20">
           <div className="flex justify-between items-center flex-col-reverse sm:flex-row">
-            <div className="max-w-161.5 text-base sm:text-lg">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
               <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
                 Corporate Trainings
               </h2>
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-between items-center flex-col-reverse sm:flex-row-reverse">
-            <div className="max-w-161.5 text-base sm:text-lg">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
               <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
                 Personalised Individual Training
               </h2>
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-between items-center flex-col-reverse sm:flex-row">
-            <div className="max-w-161.5 text-base sm:text-lg">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
               <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
                 Capacity Development
               </h2>
@@ -332,7 +332,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-4 flex flex-col sm:flex-row gap-8">
-              <div className="max-w-130 w-full max-h-58 sm:h-80 rounded-lg overflow-hidden shrink-0">
+              <div className="max-w-130 w-full max-h-58 sm:max-h-80 rounded-lg overflow-hidden shrink-0">
                 <Image
                   src={section4img}
                   alt="Transformation Hub with jite Newton"
@@ -475,7 +475,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="p-4 bg-white max-w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0">
+          <div className="sm:hidden p-4 bg-white max-w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0">
             <header className="flex gap-5 items-center">
               <div className="size-11 rounded-full overflow-hidden">
                 <Image
