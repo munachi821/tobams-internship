@@ -8,8 +8,8 @@ import Sms from "./Svg/sms";
 import Phone from "./Svg/phone";
 const Footer = () => {
   return (
-    <footer className="bg-[#11040E] py-8 px-5 sm:px-15 text-white border-t-2 border-[#C4C4C4]">
-      <div className="flex justify-between flex-col lg:flex-row gap-y-2 sm:gap-0">
+    <footer className="bg-[#11040E] py-8 px-5 sm:px-15 md:px-20 text-white border-t-2 border-[#C4C4C4]">
+      <div className="flex justify-between flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-y-8 lg:gap-y-0 md:gap-x-8">
         <div className="max-w-83 font-light">
           <Image src={tobamsLogo} alt="tobams group logo" className="w-38" />
 
@@ -64,8 +64,8 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="bg-[#FFFFFF0F] rounded-md px-5 py-7 flex flex-col-reverse md:flex-row mt-15">
-        <div className="mt-4 sm:mt-0">
+      <div className="bg-[#FFFFFF0F] rounded-md px-5 py-7 flex flex-col-reverse md:flex-row mt-15 md:justify-between md:gap-8">
+        <div className="mt-4 sm:mt-0 md:flex-1">
           <h3 className="font-nunito text-lg font-semibold sm:font-normal">
             Registered Offices
           </h3>
@@ -79,7 +79,7 @@ const Footer = () => {
                 Street, Romford, Essex, United Kingdom, RM1 4QA
               </p>
             </div>
-            <div className="border-0 md:border-l md:pl-5 border-[#DDD0DA]/10 mt-2">
+            <div className="border-0 md:border-l md:pl-5 border-[#DDD0DA]/10 mt-2 md:mt-0">
               <p className="font-light">
                 <span className="text-[#EF4353]">Nigeria</span>
                 <br />
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-0 md:border-l md:pl-5 border-[#DDD0DA]/10">
+        <div className="border-0 md:border-l md:pl-8 border-[#DDD0DA]/10 md:w-[40%] lg:w-[35%] mt-6 md:mt-0">
           <h3 className="font-nunito text-lg font-semibold sm:font-normal">
             Contact Information
           </h3>

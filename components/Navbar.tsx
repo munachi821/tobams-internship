@@ -5,7 +5,7 @@ import Menu from "./Svg/menu";
 const Navbar = () => {
   return (
     <nav className="bg-white w-full absolute top-0 z-10 font-nunito-normal">
-      <div className="flex justify-between items-center px-6">
+      <div className="flex justify-between items-center px-6 md:px-10">
         <div>
           <Image
             src={tobamsLogo}
@@ -14,20 +14,22 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="gap-3 hidden sm:flex">
-          <button className="bg-primary flex text-white text-lg font-semibold items-center px-4 py-2 gap-2 rounded-sm">
-            <div className="size-8 rounded-full flex items-center justify-center text-primary bg-[#DDD0DA]">
-              <User size={25} />
-            </div>
-            Account
-            <ChevronDown size={18} color="#DDD0DA" />
-          </button>
-          <button className="bg-[#EF4353] py-2.5 text-white text-lg font-semibold px-5 rounded-sm">
-            Take Assessment
-          </button>
-        </div>
-        <div className="sm:hidden">
-          <Menu />
+        <div className="flex items-center gap-4 md:gap-6">
+          <div className="gap-3 hidden md:flex lg:gap-4">
+            <button className="bg-primary flex text-white text-lg font-semibold items-center px-4 py-2 gap-2 rounded-sm md:text-base lg:text-lg">
+              <div className="size-8 rounded-full flex items-center justify-center text-primary bg-[#DDD0DA]">
+                <User size={25} />
+              </div>
+              Account
+              <ChevronDown size={18} color="#DDD0DA" />
+            </button>
+            <button className="bg-[#EF4353] py-2.5 text-white text-lg font-semibold px-5 rounded-sm md:text-base lg:text-lg">
+              Take Assessment
+            </button>
+          </div>
+          <div className="lg:hidden">
+            <Menu />
+          </div>
         </div>
       </div>
       <div className="border-t border-[#DDD0DA] py-4 hidden lg:block">

@@ -68,12 +68,12 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[#F9F9F9] py-8 h-fit flex my-auto w-full">
-        <div className="bg-[#5712441A] px-5 sm:px-10 overflow-x-hidden py-5 flex flex-col sm:flex-row gap-10 items-center">
+        <div className="bg-[#5712441A] px-5 sm:px-10 overflow-x-hidden py-5 flex flex-col lg:flex-row gap-10 items-center">
           <div>
-            <h2 className="sm:hidden font-nunito font-semibold text-[22px] text-primary mb-5">
+            <h2 className="lg:hidden font-nunito font-semibold text-[22px] md:text-[28px] text-primary mb-5">
               Learning Management System
             </h2>
-            <div className="w-full max-w-142 aspect-square rounded-full overflow-hidden shrink-0">
+            <div className="w-full max-w-142 aspect-square rounded-full overflow-hidden shrink-0 mx-auto">
               <Image
                 src={section2img}
                 alt="learning management system"
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="hidden sm:block font-nunito font-semibold text-[35px] text-primary mb-5">
+            <h2 className="hidden lg:block font-nunito font-semibold text-[35px] text-primary mb-5">
               Learning Management System
             </h2>
 
@@ -112,22 +112,22 @@ export default function Home() {
                 <li>● Business Model</li>
               </ul>
 
-              <button className="flex sm:hidden items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-8">
+              <button className="flex lg:hidden items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-8">
                 Learn More <ArrowUpRight />
               </button>
             </div>
 
-            <button className="hidden sm:flex items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-10">
+            <button className="hidden lg:flex items-center gap-2 text-white bg-primary text-lg px-6 py-2.5 font-semibold rounded-sm mt-10">
               Learn More <ArrowUpRight />
             </button>
           </div>
         </div>
       </section>
       <section className="px-4 sm:px-10 sm:py-12 bg-[#F9F9F9]">
-        <div className="bg-[#ffffff] py-2 space-y-6 sm:space-y-20">
-          <div className="flex justify-between items-center flex-col-reverse sm:flex-row">
-            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
-              <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
+        <div className="bg-[#ffffff] py-2 space-y-6 lg:space-y-20">
+          <div className="flex justify-between items-center flex-col-reverse lg:flex-row">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 lg:mt-0">
+              <h2 className="hidden lg:block font-nunito font-semibold text-[40px] text-main_text">
                 Corporate Trainings
               </h2>
               <p className="text-[#696969]">
@@ -156,10 +156,10 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="block sm:hidden font-nunito font-semibold text-[20px] text-main_text mb-4">
+              <h2 className="block lg:hidden font-nunito font-semibold text-[20px] md:text-[30px] text-main_text mb-4">
                 Corporate Trainings
               </h2>
-              <div className="max-w-145 sm:h-86.5 rounded-tl-[30px] rounded-tr-3xl rounded-br-[23px] rounded-bl-[40px] sm:rounded-tl-[56px] sm:rounded-tr-3xl sm:rounded-br-[23px] sm:rounded-bl-xl overflow-hidden">
+              <div className="max-w-145 sm:h-86.5 rounded-tl-[30px] rounded-tr-3xl rounded-br-[23px] rounded-bl-[40px] lg:rounded-tl-[56px] lg:rounded-tr-3xl lg:rounded-br-[23px] lg:rounded-bl-xl overflow-hidden md:mx-auto">
                 <Image
                   src={services1}
                   alt="Corporate Trainings"
@@ -168,9 +168,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center flex-col-reverse sm:flex-row-reverse">
-            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
-              <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
+          <div className="flex justify-between items-center flex-col-reverse lg:flex-row-reverse">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 lg:mt-0">
+              <h2 className="hidden lg:block font-nunito font-semibold text-[40px] text-main_text">
                 Personalised Individual Training
               </h2>
               <p className="text-[#696969]">
@@ -200,10 +200,10 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="block sm:hidden font-nunito font-semibold text-[20px] text-main_text mb-4">
+              <h2 className="block lg:hidden font-nunito font-semibold text-[20px] md:text-[30px] text-main_text mb-4">
                 Personalised Individual Training
               </h2>
-              <div className="max-w-145 sm:h-86.5 rounded-tl-[33px] sm:rounded-tl-[33px] rounded-tr-lg rounded-br-lg rounded-bl-lg overflow-hidden">
+              <div className="max-w-145 sm:h-86.5 rounded-tl-[33px] lg:rounded-tl-[56px] rounded-tr-lg rounded-br-lg rounded-bl-lg overflow-hidden md:mx-auto">
                 <Image
                   src={services2}
                   alt="Personalised Individual Training"
@@ -212,9 +212,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center flex-col-reverse sm:flex-row">
-            <div className="max-w-161.5 text-base sm:text-lg mt-4 sm:mt-0">
-              <h2 className="hidden sm:block font-nunito font-semibold text-[40px] text-main_text">
+          <div className="flex justify-between items-center flex-col-reverse lg:flex-row">
+            <div className="max-w-161.5 text-base sm:text-lg mt-4 lg:mt-0">
+              <h2 className="hidden lg:block font-nunito font-semibold text-[40px] text-main_text">
                 Capacity Development
               </h2>
               <p className="text-[#696969]">
@@ -244,10 +244,10 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="block sm:hidden font-nunito font-semibold text-[20px] text-main_text mb-4">
+              <h2 className="block lg:hidden font-nunito font-semibold text-[20px] md:text-[30px] text-main_text mb-4">
                 Capacity Development
               </h2>
-              <div className="max-w-145 sm:h-86.5 rounded-tl-[33px] sm:rounded-tl-[40px] rounded-tr-lg rounded-br-lg rounded-bl-lg overflow-hidden">
+              <div className="max-w-145 sm:h-86.5 rounded-tl-[33px] lg:rounded-tl-[56px] rounded-tr-lg rounded-br-lg rounded-bl-lg overflow-hidden md:mx-auto">
                 <Image
                   src={services3}
                   alt="Corporate Trainings"
@@ -259,12 +259,12 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[#F9F9F9] flex items-center justify-center py-5 sm:p-12 px-4">
-        <div className="max-w-6xl w-full gap-5 sm:gap-10 bg-[#2C0922] rounded-2xl p-3.5 sm:p-10 flex flex-col sm:flex-row items-center justify-between">
+        <div className="max-w-6xl w-full gap-5 lg:gap-10 bg-[#2C0922] rounded-2xl p-3.5 sm:p-10 flex flex-col lg:flex-row items-center justify-between">
           <div>
-            <h2 className="sm:hidden text-base font-semibold sm:hiddden text-white mt-1.5 mb-3.5 font-nunito">
+            <h2 className="lg:hidden text-base md:text-[24px] font-semibold text-white mt-1.5 mb-3.5 font-nunito">
               Management Development Program
             </h2>
-            <div className=" sm:max-w-125 sm:h-130 shrink-0 rounded-lg rounded-br-none overflow-hidden">
+            <div className=" lg:max-w-125 lg:h-130 shrink-0 rounded-lg rounded-br-none overflow-hidden md:mx-auto">
               <Image
                 src={section3img}
                 alt="Management development program"
@@ -274,7 +274,7 @@ export default function Home() {
           </div>
 
           <div className="text-white max-w-140 w-full">
-            <h2 className="hidden sm:block text-[35px] font-nunito">
+            <h2 className="hidden lg:block text-[35px] font-nunito">
               Management Development Program
             </h2>
             <div className="text-base sm:text-lg font-normal space-y-5 sm:mt-2">
@@ -331,8 +331,8 @@ export default function Home() {
                 full potential and drive success in your endeavours.
               </p>
             </div>
-            <div className="mt-4 flex flex-col sm:flex-row gap-8">
-              <div className="max-w-130 w-full max-h-58 sm:max-h-80 rounded-lg overflow-hidden shrink-0">
+            <div className="mt-4 flex flex-col lg:flex-row gap-8">
+              <div className="max-w-130 w-full max-h-58 lg:max-h-80 rounded-lg overflow-hidden shrink-0 md:mx-auto">
                 <Image
                   src={section4img}
                   alt="Transformation Hub with jite Newton"
@@ -384,7 +384,7 @@ export default function Home() {
             career advancement.
           </p>
 
-          <div className="grid sm:grid-cols-2 bg-primary p-5 text-white rounded-lg mt-4 gap-4">
+          <div className="grid md:grid-cols-2 bg-primary p-5 text-white rounded-lg mt-4 gap-4">
             <div>
               <h3 className="font-semibold mb-3">Expert-Led Learning</h3>
               <p className="text-sm sm:text-base">
@@ -429,11 +429,11 @@ export default function Home() {
       <section className="pt-1 sm:pt-8 bg-[#F9F9F9]">
         <div className="p-2 px-3">
           <div className="bg-primary max-w-5xl mx-auto font-nunito p-9 flex flex-col items-center justify-center rounded-md m-3">
-            <p className="hidden sm:block text-white text-center text-base sm:text-lg font-semibold">
+            <p className="hidden md:block text-white text-center text-base sm:text-lg font-semibold">
               Want to accelerate professional growth and development at your
               organisation? <br /> See how we can help.
             </p>
-            <p className="block sm:hidden text-white text-center text-base sm:text-lg font-semibold">
+            <p className="block md:hidden text-white text-center text-base sm:text-lg font-semibold">
               Don&apos;t just dream it—let&apos;s build it! Click now and start
               your project with Tobams Group. Your journey to digital excellence
               begins here.
@@ -452,7 +452,7 @@ export default function Home() {
           <div className="max-w-full mt-8 flex items-center overflow-y-auto gap-5 hide-scrollbar">
             {testimonials.map((testimonial, i) => (
               <div
-                className="hidden sm:block p-4 bg-white w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0"
+                className="hidden lg:block p-4 bg-white w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0"
                 key={i}
               >
                 <header className="flex gap-5 items-center">
@@ -475,7 +475,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="sm:hidden p-4 bg-white max-w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0">
+          <div className="lg:hidden p-4 bg-white max-w-100 rounded-xl border-l-2 border-[#EF4353] shrink-0 mx-auto">
             <header className="flex gap-5 items-center">
               <div className="size-11 rounded-full overflow-hidden">
                 <Image
@@ -512,7 +512,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#1D0617] py-8 px-5 sm:px-14 flex items-start sm:justify-between flex-col sm:flex-row text-white mt-6.5 sm:mt-10">
+        <div className="bg-[#1D0617] py-8 px-5 sm:px-14 flex items-start md:items-center sm:justify-between flex-col md:flex-row text-white mt-6.5 sm:mt-10">
           <div>
             <p className="text-sm sm:text-lg mb-3">
               Ready to be a part of something extraodinary?
